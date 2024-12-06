@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- Meta Data -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Tab Title and Icon -->
+        <title>Chess</title>
+        <link rel="icon" href="img/cCrown.png">
+        <!-- CSS Styling -->
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <!-- Page Content -->
+    <body>
+        <!-- White Team -->
+        <div class="wTurn">
+            <img class="wStatus" src="img/wMove.png">
+            <picture>
+                <source media="(max-width: 1230px)" srcset="img/wth.png">
+                <img id="wTeam" src="img/wtv.png">
+            </picture>
+            <img class="wStatus" src="img/wMove.png">
+        </div>
+        <!-- Select Menu -->
+        <div class="sContainer">
+            <div class="cSelect">
+                <div class="wCell"><img class="cPiece" id="s1"></div>
+                <div class="bCell"><img class="cPiece" id="s2"></div>
+                <div class="wCell"><img class="cPiece" id="s3"></div>
+                <div class="bCell"><img class="cPiece" id="s4"></div>
+            </div>
+        </div>
+        <!-- Chess Board -->
+        <div class="bContainer">
+            <div class="cBoard">
+                <!-- Row 8 -->
+                <div class="bCell"><img class="cPiece" id="a8"></div>
+                <div class="wCell"><img class="cPiece" id="b8"></div>
+                <div class="bCell"><img class="cPiece" id="c8"></div>
+                <div class="wCell"><img class="cPiece" id="d8"></div>
+                <div class="bCell"><img class="cPiece" id="e8"></div>
+                <div class="wCell"><img class="cPiece" id="f8"></div>
+                <div class="bCell"><img class="cPiece" id="g8"></div>
+                <div class="wCell"><img class="cPiece" id="h8"></div>
+                <!-- Row 7 -->
+                <div class="wCell"><img class="cPiece" id="a7"></div>
+                <div class="bCell"><img class="cPiece" id="b7"></div>
+                <div class="wCell"><img class="cPiece" id="c7"></div>
+                <div class="bCell"><img class="cPiece" id="d7"></div>
+                <div class="wCell"><img class="cPiece" id="e7"></div>
+                <div class="bCell"><img class="cPiece" id="f7"></div>
+                <div class="wCell"><img class="cPiece" id="g7"></div>
+                <div class="bCell"><img class="cPiece" id="h7"></div>
+                <!-- Row 6 -->
+                <div class="bCell"><img class="cPiece" id="a6"></div>
+                <div class="wCell"><img class="cPiece" id="b6"></div>
+                <div class="bCell"><img class="cPiece" id="c6"></div>
+                <div class="wCell"><img class="cPiece" id="d6"></div>
+                <div class="bCell"><img class="cPiece" id="e6"></div>
+                <div class="wCell"><img class="cPiece" id="f6"></div>
+                <div class="bCell"><img class="cPiece" id="g6"></div>
+                <div class="wCell"><img class="cPiece" id="h6"></div>
+                <!-- Row 5 -->
+                <div class="wCell"><img class="cPiece" id="a5"></div>
+                <div class="bCell"><img class="cPiece" id="b5"></div>
+                <div class="wCell"><img class="cPiece" id="c5"></div>
+                <div class="bCell"><img class="cPiece" id="d5"></div>
+                <div class="wCell"><img class="cPiece" id="e5"></div>
+                <div class="bCell"><img class="cPiece" id="f5"></div>
+                <div class="wCell"><img class="cPiece" id="g5"></div>
+                <div class="bCell"><img class="cPiece" id="h5"></div>
+                <!-- Row 4 -->
+                <div class="bCell"><img class="cPiece" id="a4"></div>
+                <div class="wCell"><img class="cPiece" id="b4"></div>
+                <div class="bCell"><img class="cPiece" id="c4"></div>
+                <div class="wCell"><img class="cPiece" id="d4"></div>
+                <div class="bCell"><img class="cPiece" id="e4"></div>
+                <div class="wCell"><img class="cPiece" id="f4"></div>
+                <div class="bCell"><img class="cPiece" id="g4"></div>
+                <div class="wCell"><img class="cPiece" id="h4"></div>
+                <!-- Row 3 -->
+                <div class="wCell"><img class="cPiece" id="a3"></div>
+                <div class="bCell"><img class="cPiece" id="b3"></div>
+                <div class="wCell"><img class="cPiece" id="c3"></div>
+                <div class="bCell"><img class="cPiece" id="d3"></div>
+                <div class="wCell"><img class="cPiece" id="e3"></div>
+                <div class="bCell"><img class="cPiece" id="f3"></div>
+                <div class="wCell"><img class="cPiece" id="g3"></div>
+                <div class="bCell"><img class="cPiece" id="h3"></div>
+                <!-- Row 2 -->
+                <div class="bCell"><img class="cPiece" id="a2"></div>
+                <div class="wCell"><img class="cPiece" id="b2"></div>
+                <div class="bCell"><img class="cPiece" id="c2"></div>
+                <div class="wCell"><img class="cPiece" id="d2"></div>
+                <div class="bCell"><img class="cPiece" id="e2"></div>
+                <div class="wCell"><img class="cPiece" id="f2"></div>
+                <div class="bCell"><img class="cPiece" id="g2"></div>
+                <div class="wCell"><img class="cPiece" id="h2"></div>
+                <!-- Row 1 -->
+                <div class="wCell"><img class="cPiece" id="a1"></div>
+                <div class="bCell"><img class="cPiece" id="b1"></div>
+                <div class="wCell"><img class="cPiece" id="c1"></div>
+                <div class="bCell"><img class="cPiece" id="d1"></div>
+                <div class="wCell"><img class="cPiece" id="e1"></div>
+                <div class="bCell"><img class="cPiece" id="f1"></div>
+                <div class="wCell"><img class="cPiece" id="g1"></div>
+                <div class="bCell"><img class="cPiece" id="h1"></div>
+            </div>
+        </div>
+        <!-- Black Team -->
+        <div class="bTurn">
+            <img class="bStatus" src="img/bMove.png">
+            <picture>
+                <source media="(max-width: 1230px)" srcset="img/bth.png">
+                <img id="bTeam" src="img/btv.png">
+            </picture>
+            <img class="bStatus" src="img/bMove.png">
+        </div>
+        <!-- JS Scripting -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+/* Variables */
+:root {
+    /* Color */
+    --BG-COLOR: #7f7f7f;
+    --WCELL-COLOR: #e5aa7a;
+    --BCELL-COLOR: #9c5a3c;
+    /* Board Size */
+    --BOARD-SIZE: 960px;
+    --CELL-SIZE: 96px;
+    --CELL-BORDER-SIZE: 6px;
+    /* Select Size */
+    --SELECT-WIDTH: 396px;
+    --SELECT-HEIGHT: 108px;
+    /* Turn Size */
+    --TURN-SIZE: 96px;
+    --TURN-PADDING: 15px;
+    /* Team Size */
+    --TEAM-WIDTH: 96px;
+    --TEAM-HEIGHT: 384px;
+    --STATUS-SIZE: 96px;
+}
+/* Body Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--BG-COLOR);
+}
+/* Board Layout */
+.bContainer {
+    width: var(--BOARD-SIZE);
+    height: var(--BOARD-SIZE);
+    background-image: url('../img/cBoard.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Board Grid Layout */
+.cBoard {
+    display: grid;
+    grid-template-columns: repeat(8, var(--CELL-SIZE));
+    grid-template-rows: repeat(8, var(--CELL-SIZE));
+}
+/* Select Layout */
+.sContainer {
+    width: var(--SELECT-WIDTH);
+    height: var(--SELECT-HEIGHT);
+    background-image: url('../img/cSelect.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    visibility: hidden;
+}
+/* Select Grid Layout */
+.cSelect {
+    display: grid;
+    grid-template-columns: repeat(4, var(--CELL-SIZE));
+    grid-template-rows: repeat(1, var(--CELL-SIZE));
+}
+/* Piece Layout */
+.cPiece {
+    width: 100%;
+}
+/* Turn Layout */
+.wTurn, .bTurn {
+    width: var(--TURN-SIZE);
+    padding: var(--TURN-PADDING);
+}
+/* White Cell Layout */
+.wCell:hover {
+    border: dashed var(--CELL-BORDER-SIZE) var(--WCELL-COLOR);
+}
+.wCell:active {
+    border-style: solid;
+}
+/* Black Cell Layout */
+.bCell:hover {
+    border: dashed var(--CELL-BORDER-SIZE) var(--BCELL-COLOR);
+}
+.bCell:active {
+    border-style: solid;
+}
+/* Team Layout */
+#wTeam, #bTeam {
+    width: var(--TEAM-WIDTH);
+    height: var(--TEAM-HEIGHT);
+}
+/* Crown Layout */
+.wStatus, .bStatus {
+    width: var(--STATUS-SIZE);
+    height: var(--STATUS-SIZE);
+}
+/* Medium-Large Display */
+@media (max-width: 1230px) {
+    /* Variables */
+    :root {
+        /* Board Size */
+        --BOARD-SIZE: 780px;
+        --CELL-SIZE: 78px;
+        --CELL-BORDER-SIZE: 5px;
+        /* Select Size */
+        --SELECT-WIDTH: 322px;
+        --SELECT-HEIGHT: 88px;
+        /* Turn Size */
+        --TURN-SIZE: 381px;
+        --TURN-PADDING: 8px;
+        /* Team Size */
+        --TEAM-WIDTH: 253px;
+        --TEAM-HEIGHT: 64px;
+        --STATUS-SIZE: 64px;
+    }
+    /* Body Layout */
+    body {
+        flex-direction: column-reverse;
+    }
+    /* Turn Layout */
+    .wTurn, .bTurn {
+        display: flex;
+    }
+}
+/* Medium Display */
+@media (max-width: 790px) {
+    /* Variables */
+    :root {
+        /* Board Size */
+        --BOARD-SIZE: 540px;
+        --CELL-SIZE: 54px;
+        --CELL-BORDER-SIZE: 4px;
+        /* Select Size */
+        --SELECT-WIDTH: 223px;
+        --SELECT-HEIGHT: 61px;
+        /* Turn Size */
+        --TURN-SIZE: 190px;
+        --TURN-PADDING: 6px;
+        /* Team Size */
+        --TEAM-WIDTH: 126px;
+        --TEAM-HEIGHT: 32px;
+        --STATUS-SIZE: 32px;
+    }
+}
+/* Small Display */
+@media (max-width: 430px) {
+    /* Variables */
+    :root {
+        /* Board Size */
+        --BOARD-SIZE: 420px;
+        --CELL-SIZE: 42px;
+        --CELL-BORDER-SIZE: 3px;
+        /* Select Size */
+        --SELECT-WIDTH: 176px;
+        --SELECT-HEIGHT: 48px;
+    }
+}
+/* Smallest Display */
+@media (max-width: 380px) {
+    /* Variables */
+    :root {
+        /* Board Size */
+        --BOARD-SIZE: 300px;
+        --CELL-SIZE: 30px;
+        --CELL-BORDER-SIZE: 2px;
+        /* Select Size */
+        --SELECT-WIDTH: 125px;
+        --SELECT-HEIGHT: 34px;
+    }
+}
